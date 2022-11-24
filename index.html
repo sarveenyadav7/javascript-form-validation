@@ -11,29 +11,51 @@
 
 <section>
     <div class="heading">Registration Form</div>
-   <form>
+
+   <form name="register" class="form" onsubmit="event.preventDefault(); return validateForm()">
         <div class="form_changes">
-            <label for="full_name">Full Name</label>
-            <input type="text" name="full_name" id="full_name">
-            
+            <label for="fullname" class="registration_label">Full Name</label>
+            <input type="text" name="fullname" id="fullname" class="registration_input">  
         </div>
+
         <div class="form_changes">
-            <label for="phonenumber">Phone Number</label>
-            <input type="number" name="phonenumber" id="phonenumber">
+            <label for="phonenumber" class="registration_label">Phone Number</label>
+            <input type="number" name="phonenumber" id="phonenumber" class="registration_input">
             
-        </div>
+        </div> 
+
+
+
         <div class="form_changes">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <label for="email" class="registration_label">Email</label>
+            <input type="email" name="email" id="email" class="registration_input">
            
         </div>
-        <div class="form_changes">
+
+        <div class="error_message"></div>
+
+        <div class="form_control">
+            <button type="submit" class="btn_submit">Create New Account</button>
+        </div> 
+
+
+
+        
+       
+        <!-- <div class="form_changes">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
             
-        </div>
-        <button>Create your account</button>
+        </div> -->
+
+        
    </form>
 </section> 
+
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
