@@ -1,12 +1,12 @@
 function validateForm(){
-let fullName = document.querySelector('#fullname').value
-let fullNameLength = fullName.length
+let FullName = document.querySelector('#fullname').value
+let FullNameLength = FullName.length
 
-console.log(fullName)
-console.log(fullNameLength)
+console.log(FullName)
+console.log(FullNameLength)
 
-let phoneNumber = document.querySelector('#phonenumber').value
-let phoneNumberLength = phoneNumber.length
+let PhoneNumber = document.querySelector('#phonenumber').value
+let phoneNumberLength = PhoneNumber.length
 
 console.log(phoneNumberLength)
 
@@ -17,7 +17,7 @@ console.log(emailId)
 
 
 
-if(fullNameLength <= 3){
+if(FullNameLength <= 3){
     document.querySelector('.error_message').innerText = 'Name is required with minium 4 characters!!'
 
 } else if(phoneNumberLength !== 10){
